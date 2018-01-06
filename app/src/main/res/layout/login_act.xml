@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.gabrielrosa.retrofitwithkotlin.LoginActivity"
+    >
+
+    <data>
+        <variable
+            name="handler"
+            type="com.example.gabrielrosa.retrofitwithkotlin.LoginActivity"
+        />
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:id="@+id/user_number_edit_text"
+            android:layout_marginTop="100dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="numberSigned"
+            android:hint="Digite o numero do usuário"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="Biotinha papae"
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_to_request"
+            android:onClick="@{handler::clicked}"
+            />
+
+    </LinearLayout>
+</layout>
+

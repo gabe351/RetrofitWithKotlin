@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retrofit with kotlin</string>
+    <string name="click_to_request">click to request</string>
+</resources>
